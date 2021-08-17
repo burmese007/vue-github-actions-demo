@@ -8,7 +8,7 @@ jobs:
     - name: Checkout 🛎️
       uses: actions/checkout@v2 # 将代码拷贝到虚机中
 
-   - name: buildAndDeploy 🚀
+    - name: buildAndDeploy
       uses: JamesIves/github-pages-deploy-action@4.1.4 
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # 使用刚新建的secret

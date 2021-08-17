@@ -13,13 +13,13 @@ jobs:
       with:
         persist-credentials: false
 
-    - name: Install and Build 
+    - name: Install and Build 🔧
       run: |
          npm install 
          npm run build
 
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@3.7.1
+      uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
           # 该workflow需要操作repo，因此需要一个密钥，下面会讲到如何获取这个密钥
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
